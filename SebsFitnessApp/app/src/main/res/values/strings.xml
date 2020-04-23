@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SebsFitnessApp</string>
+    <string name="start_workout_string">Start Workout</string>
+    <string name="log_Exercises_string">Log Exercises</string>
+    <string name="progress_string">Progress</string>
+    <string name="home_string">Home</string>
+    <string name="body_stats_string">Body stats</string>
+    <string name="noSupport_string">Heart rate sensor not found</string>
+    <string name="noStepSupportString">Step counter sensor not found</string>
+    <string name="start_measure">Start heart rate measurement</string>
+    <string name="steps_header_string">Number of steps taken</string>
+    <string name="stop_workout_string">Stop Workout</string>
+    <string name="timer_text">Time elapsed:</string>
+
+</resources>

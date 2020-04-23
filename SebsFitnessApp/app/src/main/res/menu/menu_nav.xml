@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeTab"
+        android:title="@string/home_string"
+        android:icon="@drawable/homeicon"
+
+        />
+
+    <item
+        android:id="@+id/logExercises_tab"
+        android:title="@string/log_Exercises_string"
+        android:icon="@drawable/logicon"
+        />
+
+    <item
+        android:id="@+id/heartRate_tab"
+        android:title="@string/body_stats_string"
+        android:icon="@drawable/hearticon"
+
+        />
+
+
+
+
+
+
+
+</menu>

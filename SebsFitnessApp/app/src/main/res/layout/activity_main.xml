@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Homescreen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_nav"
+
+
+
+        />
+
+    <!--    <TableRow-->
+    <!--        android:id="@+id/navbuttom"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="bottom"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+
+    <!--        <Button-->
+    <!--            android:id="@+id/logbutton"-->
+    <!--            style="?android:attr/buttonBarButtonStyle"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="start"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="#7F9D7E"-->
+    <!--            android:text="@string/log_Exercises_tab"-->
+    <!--            android:textColor="#000000" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/homebutton"-->
+    <!--            style="?android:attr/buttonBarButtonStyle"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="#7F9D7E"-->
+    <!--            android:text="@string/home_tab"-->
+    <!--            android:textColor="#000000" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/progressbutton"-->
+    <!--            style="?android:attr/buttonBarButtonStyle"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="#7F9D7E"-->
+    <!--            android:text="@string/progress_tab"-->
+    <!--            android:textColor="#000000" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/hearRatebutton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@color/background"-->
+    <!--            android:contentDescription="@string/heart_rate"-->
+    <!--            android:tint="#6D8D6B"-->
+    <!--            app:srcCompat="@mipmap/red" />-->
+
+    <!--    </TableRow>-->
+
+    <Button
+        android:id="@+id/startWorkout_button"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
+        android:layout_marginBottom="266dp"
+        android:background="#7F9D7E"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/start_workout_string"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/timer_text"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/stopWorkout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startWorkout_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-250dp"
+        android:background="#CA4E59"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/stop_workout_string"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/work_timer"
+        android:layout_centerHorizontal="true"
+        android:text="@string/timer_text"
+        android:textSize="24sp" />
+
+    <Chronometer
+        android:id="@+id/work_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/startWorkout_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-280dp"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

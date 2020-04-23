@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LoggingScreen"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoggingActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/logLayout">
+
+            <EditText
+                android:id="@+id/exercise_Name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Enter exercise name"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/insert_weight"
+                android:hint="Enter weight in kg"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/log_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomNav"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="#6D8D6B"
+        android:text="Log exercise" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_nav"
+
+
+
+        />
+
+<!--    <TableRow-->
+<!--        android:id="@+id/navbuttom"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="bottom"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/logExercises"-->
+<!--            style="?android:attr/buttonBarButtonStyle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#7F9D7E"-->
+<!--            android:text="@string/log_Exercises_tab"-->
+<!--            android:textColor="#000000" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/homeTab"-->
+<!--            style="?android:attr/buttonBarButtonStyle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#7F9D7E"-->
+<!--            android:text="@string/home_tab"-->
+<!--            android:textColor="#000000" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/progress"-->
+<!--            style="?android:attr/buttonBarButtonStyle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="#7F9D7E"-->
+<!--            android:text="@string/progress_tab"-->
+<!--            android:textColor="#000000" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/hearRate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/background"-->
+<!--            android:contentDescription="@string/heart_rate"-->
+<!--            android:tint="#6D8D6B"-->
+<!--            app:srcCompat="@mipmap/red" />-->
+
+<!--    </TableRow>-->
+</RelativeLayout>
